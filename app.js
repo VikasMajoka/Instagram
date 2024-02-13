@@ -4,6 +4,8 @@ const PORT=5000
 
 reuire('./models/user')
 
+app.use(require('./routes/auth'))
+
 const customMiddleware = (req ,res ,next)=>{
     console.log("middleware executed!!")
     next()
